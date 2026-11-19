@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Terms & Conditions : FireTopUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #38bdf8;
+            --primary-light: #7dd3fc;
+            --secondary: #e0f2fe;
+            --bg: #090d16;
+            --card-bg: #111827;
+            --text-dark: #f1f5f9;
+            --text-light: #94a3b8;
+            --border: #1e293b;
+            --success: #22c55e;
+            --danger: #ef4444;
+        }
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            background-color: #05080f;
+            color: var(--text-dark);
+            padding-bottom: 40px;
+        }
+        .app-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: var(--bg);
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.08);
+        }
+
+        /* Header */
+        .app-header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #0284c7, #38bdf8);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #090d16;
+            font-weight: 800;
+            font-size: 18px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(56, 189, 248, 0.3);
+        }
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .logo-text h1 {
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+        .logo-text span {
+            font-size: 10px;
+            font-weight: 700;
+            color: #38bdf8;
+            background: rgba(56, 189, 248, 0.15);
+            padding: 1px 6px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* Content Styling */
+        .content-section {
+            padding: 20px 16px;
+        }
+        .terms-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .terms-card h2 {
+            font-size: 15px;
+            font-weight: 800;
+            color: #7dd3fc;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .terms-card h2 i {
+            color: var(--primary);
+            font-size: 14px;
+        }
+        .terms-card p, .terms-card li {
+            font-size: 12px;
+            color: var(--text-light);
+            line-height: 1.7;
+            margin-bottom: 8px;
+        }
+        .terms-card ul {
+            padding-left: 18px;
+            margin-top: 6px;
+        }
+
+        /* Footer */
+        .app-footer {
+            background: #060911;
+            border-top: 1px solid var(--border);
+            color: var(--text-dark);
+            padding: 24px 16px;
+            margin-top: 20px;
+            border-radius: 24px 24px 0 0;
+            text-align: center;
+        }
+        .app-footer h4 {
+            font-size: 14px;
+            font-weight: 800;
+            color: #7dd3fc;
+            margin-bottom: 8px;
+        }
+        .app-footer p {
+            font-size: 11px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+        .footer-bottom {
+            font-size: 10px;
+            color: #64748b;
+            border-top: 1px solid var(--border);
+            padding-top: 16px;
+        }
+        
+        .back-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: var(--text-dark);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    
+    <!-- HEADER -->
+    <header class="app-header">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="logo-text">
+                <h1>FireTopUp</h1>
+                <span>FREE FIRE</span>
+            </div>
+        </div>
+        <button class="back-btn" onclick="history.back()">
+            <i class="fas fa-arrow-left" style="font-size: 14px;"></i> Back
+        </button>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="content-section">
+        
+        <!-- Title Header Card -->
+        <div class="terms-card" style="text-align: center; padding: 20px 16px;">
+            <div style="width: 50px; height: 50px; background: rgba(56, 189, 248, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; border: 2px solid var(--primary);">
+                <i class="fas fa-file-contract" style="font-size: 22px; color: var(--primary);"></i>
+            </div>
+            <h2 style="justify-content: center; font-size: 18px;">Terms & Conditions</h2>
+            <p>Please read these terms and conditions carefully before using FireTopUp services.</p>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="terms-card">
+            <h2><i class="fas fa-check-circle"></i> 1. Acceptance of Terms</h2>
+            <p>By accessing or using FireTopUp, you agree to be bound by these Terms & Conditions. If you disagree with any part of these terms, you may not access our services.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="terms-card">
+            <h2><i class="fas fa-user-shield"></i> 2. User Accounts & Security</h2>
+            <p>When you create an account with us, you must provide accurate and complete information. You are solely responsible for maintaining the security of your account, password, and support pin.</p>
+            <ul>
+                <li>You must safeguard your login credentials.</li>
+                <li>Notify us immediately of any unauthorized account access.</li>
+                <li>Accounts found violating our policies may be terminated.</li>
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="terms-card">
+            <h2><i class="fas fa-wallet"></i> 3. Wallet Balance & Payments</h2>
+            <p>Users can add funds to their wallet using supported payment methods (bKash, Nagad, Rocket). All deposits and top-up transactions are processed based on system rules:</p>
+            <ul>
+                <li>Ensure correct Transaction IDs (TrxID) are provided during payment verification.</li>
+                <li>Wallet balances are non-transferable and used exclusively for purchases on FireTopUp.</li>
+                <li>Fraudulent payment attempts will lead to permanent account suspension.</li>
+            </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="terms-card">
+            <h2><i class="fas fa-gamepad"></i> 4. Orders & Delivery</h2>
+            <p>We provide automated and manual top-up services for Free Fire and gaming vouchers. 
+                Users must provide correct Player IDs. FireTopUp is not responsible for items delivered to incorrect Player IDs provided by the user.</p>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="terms-card">
+            <h2><i class="fas fa-sync-alt"></i> 5. Changes to Terms</h2>
+            <p>We reserve the right to modify or replace these terms at any time at our sole discretion. Continued use of the platform after any changes constitutes acceptance of the new terms.</p>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <app-footer class="app-footer" style="display: block;">
+        <h4>STAY CONNECTED</h4>
+        <p>For queries regarding our terms, contact support via Telegram or WhatsApp.</p>
+        <div class="footer-bottom">
+            © 2026 FireTopUp | All Rights Reserved
+        </div>
+    </app-footer>
+
+</div>
+
+</body>
+</html>
